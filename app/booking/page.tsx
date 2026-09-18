@@ -12,11 +12,11 @@ export default function BookingPage() {
       <PageHeader
         breadcrumb="Book Inspection"
         title="Schedule a Free Inspection"
-        subtitle="Our senior technician visits your Dubai property, inspects the stone, and provides a fixed-price quote."
+        subtitle="Our senior technician visits your Dubai property, inspects the stone, and provides a customized restoration consultation."
         image={imgs.bookingHero}
       />
 
-      <section className="py-24 bg-[#f0ede8]">
+      <section className="py-24 bg-[#EAF4FF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Top 3 Trust Badges */}
@@ -27,10 +27,10 @@ export default function BookingPage() {
               { icon: <MapPin className="w-6 h-6 text-gold mx-auto mb-1.5" />,       label: "All Dubai",  sub: "Mobile dispatch" },
             ].map(({ icon, label, sub }) => (
               <AnimatedSection key={label}>
-                <div className="bg-[#fafaf8] text-center p-5 rounded-2xl border border-[#e4e0da] shadow-sm">
+                <div className="bg-[#F5FAFF] text-center p-5 rounded-2xl border border-[#D6E4F5] shadow-sm">
                   {icon}
-                  <div className="font-bold text-[#2c2a27] text-sm">{label}</div>
-                  <div className="text-xs text-[#8a8278] mt-0.5">{sub}</div>
+                  <div className="font-bold text-[#1F2937] text-sm">{label}</div>
+                  <div className="text-xs text-[#5B6472] mt-0.5">{sub}</div>
                 </div>
               </AnimatedSection>
             ))}

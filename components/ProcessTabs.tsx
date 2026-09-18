@@ -54,19 +54,19 @@ export default function ProcessTabs() {
             onClick={() => setActiveIdx(idx)}
             className={`p-4 sm:p-5 rounded-2xl border text-left transition-all ${
               activeIdx === idx
-                ? "bg-[#2c2a27] border-[#8a6c3e] text-white shadow-lg scale-[1.02]"
-                : "bg-[#fafaf8] border-[#e4e0da] text-[#3d3a35] hover:border-[#c9a96e]/50"
+                ? "bg-[#1F2937] border-[#0B3D91] text-white shadow-lg scale-[1.02]"
+                : "bg-[#F5FAFF] border-[#D6E4F5] text-[#1F2937] hover:border-[#1456B8]/50"
             }`}
           >
             <div className="flex items-center justify-between mb-2">
               <span className={`text-xs font-black px-2.5 py-1 rounded-md ${
-                activeIdx === idx ? "bg-[#8a6c3e] text-white font-extrabold" : "bg-[#ede9e3] text-[#6b6560]"
+                activeIdx === idx ? "bg-[#0B3D91] text-white font-extrabold" : "bg-[#EAF4FF] text-[#5B6472]"
               }`}>
                 Step {s.num}
               </span>
-              {activeIdx === idx && <Sparkles className="w-4 h-4 text-[#c9a96e]" />}
+              {activeIdx === idx && <Sparkles className="w-4 h-4 text-[#1456B8]" />}
             </div>
-            <div className={`font-bold text-sm sm:text-base leading-tight ${activeIdx === idx ? "text-white" : "text-[#2c2a27]"}`}>
+            <div className={`font-bold text-sm sm:text-base leading-tight ${activeIdx === idx ? "text-white" : "text-[#1F2937]"}`}>
               {s.title}
             </div>
           </button>
@@ -81,27 +81,27 @@ export default function ProcessTabs() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -15 }}
           transition={{ duration: 0.35 }}
-          className="bg-[#fafaf8] rounded-3xl border border-[#e4e0da] p-6 sm:p-10 shadow-md grid grid-cols-1 lg:grid-cols-12 gap-8 items-center"
+          className="bg-[#F5FAFF] rounded-3xl border border-[#D6E4F5] p-6 sm:p-10 shadow-md grid grid-cols-1 lg:grid-cols-12 gap-8 items-center"
         >
           {/* Text details */}
           <div className="lg:col-span-7">
-            <div className="text-[#8a6c3e] text-xs font-bold uppercase tracking-widest mb-1">
+            <div className="text-[#0B3D91] text-xs font-bold uppercase tracking-widest mb-1">
               Step {cur.num} of 04
             </div>
-            <h3 className="text-2xl sm:text-3xl font-black text-[#2c2a27] mb-2">
+            <h3 className="text-2xl sm:text-3xl font-black text-[#1F2937] mb-2">
               {cur.title}
             </h3>
-            <p className="text-[#8a6c3e] font-semibold text-sm mb-4">
+            <p className="text-[#0B3D91] font-semibold text-sm mb-4">
               {cur.subtitle}
             </p>
-            <p className="text-[#6b6560] text-base leading-relaxed mb-6">
+            <p className="text-[#5B6472] text-base leading-relaxed mb-6">
               {cur.desc}
             </p>
 
             <div className="space-y-3 mb-6">
               {cur.highlights.map((h) => (
-                <div key={h} className="flex items-center gap-2.5 text-sm font-semibold text-[#2c2a27]">
-                  <CheckCircle2 className="w-4 h-4 text-[#4a6fa5] shrink-0" />
+                <div key={h} className="flex items-center gap-2.5 text-sm font-semibold text-[#1F2937]">
+                  <CheckCircle2 className="w-4 h-4 text-[#1456B8] shrink-0" />
                   <span>{h}</span>
                 </div>
               ))}
@@ -109,14 +109,14 @@ export default function ProcessTabs() {
 
             <button
               onClick={() => setActiveIdx((activeIdx + 1) % steps.length)}
-              className="inline-flex items-center gap-2 text-xs font-bold text-[#4a6fa5] hover:underline"
+              className="inline-flex items-center gap-2 text-xs font-bold text-[#1456B8] hover:underline"
             >
               Next Step: {steps[(activeIdx + 1) % steps.length].title} <ArrowRight className="w-3.5 h-3.5" />
             </button>
           </div>
 
           {/* Image */}
-          <div className="lg:col-span-5 relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-[#e4e0da]">
+          <div className="lg:col-span-5 relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-[#D6E4F5]">
             <Image
               src={cur.image}
               alt={cur.title}
@@ -124,7 +124,7 @@ export default function ProcessTabs() {
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 40vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#2c2a27]/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#1F2937]/60 to-transparent" />
             <div className="absolute bottom-4 left-4 right-4 text-white text-xs font-bold">
               Italian Certified Equipment &bull; GridsPro International
             </div>

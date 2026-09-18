@@ -17,7 +17,7 @@ const communities = [
 
 export default function DubaiCommunities() {
   return (
-    <section className="py-24 bg-[#0b0c16] text-white relative overflow-hidden border-t border-gold/20">
+    <section className="py-24 bg-[#0B3D91] text-white relative overflow-hidden border-t border-gold/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
           <SectionLabel arabic="تغطية كافة مناطق دبي">Dubai Coverage</SectionLabel>
@@ -27,7 +27,7 @@ export default function DubaiCommunities() {
           <p className="text-gray-300 text-base mb-1">
             Our mobile master stone care technicians are stationed across key Dubai zones for same-day free inspections.
           </p>
-          <p className="text-[#a89f95] text-xs sm:text-sm font-arabic">
+          <p className="text-blue-100/80 text-xs sm:text-sm font-arabic">
             فرقنا الفنية المتنقلة متواجدة في كافة مناطق دبي لتقديم المعاينة الفورية المجانية في نفس اليوم.
           </p>
         </AnimatedSection>
@@ -35,7 +35,7 @@ export default function DubaiCommunities() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
           {communities.map((c, i) => (
             <AnimatedSection key={c.name} delay={i * 0.05}>
-              <div className="p-5 rounded-2xl bg-[#121324] border border-gold/25 hover:border-gold hover:bg-[#181932] transition-all group shadow-xl">
+              <div className="p-5 rounded-2xl bg-[#1456B8] border border-gold/25 hover:border-gold hover:bg-[#1E6DDB] transition-all group shadow-xl">
                 <div className="flex items-center justify-between mb-3">
                   <div className="w-9 h-9 rounded-lg brand-gradient flex items-center justify-center text-white shadow">
                     <MapPin className="w-4 h-4" />
@@ -50,7 +50,7 @@ export default function DubaiCommunities() {
                 <div className="text-xs text-gold font-arabic mb-2">
                   {c.ar}
                 </div>
-                <p className="text-xs text-[#a89f95] font-medium">
+                <p className="text-xs text-[#5B6472] font-medium">
                   {c.tag}
                 </p>
               </div>
@@ -58,17 +58,17 @@ export default function DubaiCommunities() {
           ))}
         </div>
 
-        <div className="p-6 rounded-2xl bg-[#121324]/90 border border-gold/25 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left shadow-2xl">
+        <div className="p-6 rounded-2xl bg-[#1456B8]/90 border border-gold/25 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left shadow-2xl">
           <div className="flex items-center gap-3">
             <ShieldCheck className="w-8 h-8 text-gold shrink-0" />
             <div>
               <div className="font-bold text-white text-sm">Don't see your community listed? <span className="font-arabic font-normal text-xs text-gold">· نغطي كافة المناطق</span></div>
-              <div className="text-xs text-[#a89f95]">We cover 100% of Dubai, Sharjah &amp; Abu Dhabi on request.</div>
+              <div className="text-xs text-[#5B6472]">We cover 100% of Dubai, Sharjah &amp; Abu Dhabi on request.</div>
             </div>
           </div>
           <a
             href="tel:+971508164087"
-            className="bg-[#4a6fa5] hover:bg-[#3b5a8a] text-white font-bold text-xs px-6 py-3 rounded-lg shadow-sm transition-colors shrink-0"
+            className="bg-[#0B3D91] hover:bg-[#083070] text-white font-bold text-xs px-6 py-3 rounded-lg shadow-sm transition-colors shrink-0"
           >
             Call Dispatch: +971 50 816 4087
           </a>

@@ -9,7 +9,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#1f1d1a] text-gray-400 pt-16 sm:pt-20 border-t border-gold/15">
+    <footer className="bg-[#0B3D91] text-gray-400 pt-16 sm:pt-20 border-t border-gold/15">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12 mb-14 sm:mb-16">
 
@@ -110,7 +110,7 @@ export default function Footer() {
             
             <a
               href="tel:+971508164087"
-              className="p-3.5 bg-[#2a2724] rounded-xl border border-gold/25 flex items-center gap-3 hover:border-gold transition-colors shadow-lg block"
+              className="p-3.5 bg-[#1456B8] rounded-xl border border-gold/25 flex items-center gap-3 hover:border-gold transition-colors shadow-lg block"
             >
               <div className="w-9 h-9 rounded-lg brand-gradient flex items-center justify-center text-white font-bold shrink-0 shadow">
                 <Phone className="w-4 h-4" />

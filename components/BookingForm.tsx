@@ -14,11 +14,11 @@ export default function BookingForm({ isDark = false, mode = "hero" }: BookingFo
 
   const fieldCls = `w-full px-4 py-3 rounded-xl text-sm outline-none border transition-all duration-200 ${
     isDark
-      ? "bg-slate-900/60 border-slate-700 text-white placeholder-slate-400 focus:border-[#c9a96e] focus:bg-slate-900 focus:ring-0"
-      : "bg-white border-[#d6cfc5] text-[#2c2a27] placeholder-slate-400 focus:border-[#4a6fa5] focus:bg-white focus:ring-0"
+      ? "bg-[#0B3D91]/60 border-[#1456B8]/40 text-white placeholder-slate-400 focus:border-[#1456B8] focus:bg-[#0B3D91] focus:ring-0"
+      : "bg-white border-[#C5D9F0] text-[#1F2937] placeholder-slate-400 focus:border-[#1456B8] focus:bg-white focus:ring-0"
   }`;
   const labelCls = `block text-[11.5px] font-bold uppercase tracking-wider mb-1.5 ${
-    isDark ? "text-[#d9d2ca]" : "text-[#3d3a35]"
+    isDark ? "text-[#d9d2ca]" : "text-[#1F2937]"
   }`;
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -31,8 +31,8 @@ export default function BookingForm({ isDark = false, mode = "hero" }: BookingFo
     <div
       className={`p-6 sm:p-8 rounded-2xl border shadow-lg relative ${
         isDark
-          ? "bg-slate-900/95 backdrop-blur-xl border-slate-800 text-white"
-          : "bg-[#fafaf8] border-[#e4e0da] text-[#2c2a27]"
+          ? "bg-[#0B3D91]/95 backdrop-blur-xl border-[#1456B8]/50 text-white"
+          : "bg-[#F5FAFF] border-[#D6E4F5] text-[#1F2937]"
       }`}
     >
       <AnimatePresence mode="wait">
@@ -43,19 +43,19 @@ export default function BookingForm({ isDark = false, mode = "hero" }: BookingFo
             animate={{ opacity: 1, scale: 1 }}
             className="py-10 text-center"
           >
-            <CheckCircle2 className="w-16 h-16 text-[#4a6fa5] mx-auto mb-4" />
-            <h3 className={`text-2xl font-bold mb-2 ${isDark ? "text-white" : "text-[#2c2a27]"}`}>
+            <CheckCircle2 className="w-16 h-16 text-[#1456B8] mx-auto mb-4" />
+            <h3 className={`text-2xl font-bold mb-2 ${isDark ? "text-white" : "text-[#1F2937]"}`}>
               Booking Request Received!
             </h3>
-            <div className="text-[#8a6c3e] font-arabic text-sm mb-3 font-semibold">
+            <div className="text-[#0B3D91] font-arabic text-sm mb-3 font-semibold">
               تم استلام طلب المعاينة والحجز بنجاح
             </div>
-            <p className="text-sm text-[#8a8278] max-w-sm mx-auto mb-6">
+            <p className="text-sm text-[#5B6472] max-w-sm mx-auto mb-6">
               Our Dubai stone specialist will contact you within 30 minutes to confirm your scheduled time and date.
             </p>
             <button
               onClick={() => setStatus("idle")}
-              className="bg-[#4a6fa5] hover:bg-[#3b5a8a] text-white text-xs font-bold px-6 py-3 rounded-xl shadow transition-colors"
+              className="bg-[#1456B8] hover:bg-[#0B3D91] text-white text-xs font-bold px-6 py-3 rounded-xl shadow transition-colors"
             >
               Submit Another Request · تقديم طلب آخر
             </button>
@@ -68,11 +68,11 @@ export default function BookingForm({ isDark = false, mode = "hero" }: BookingFo
             onSubmit={handleSubmit}
           >
             <div className="mb-6">
-              <h3 className={`text-xl sm:text-2xl font-black mb-1 flex items-center justify-between ${isDark ? "text-white" : "text-[#2c2a27]"}`}>
+              <h3 className={`text-xl sm:text-2xl font-black mb-1 flex items-center justify-between ${isDark ? "text-white" : "text-[#1F2937]"}`}>
                 <span>{mode === "hero" ? "Schedule a Booking" : "Book Marble & Stone Service"}</span>
                 <span className="text-xs sm:text-sm font-normal text-gold font-arabic">حجز موعد خدمة</span>
               </h3>
-              <p className={`text-xs ${isDark ? "text-gray-300" : "text-[#8a8278]"}`}>
+              <p className={`text-xs ${isDark ? "text-gray-300" : "text-[#5B6472]"}`}>
                 Free Inspection &amp; Exact Fixed Quotation <span className="font-arabic font-normal text-gold">| معاينة مجانية وتقديم عرض سعر فوري</span>
               </p>
             </div>
@@ -113,7 +113,7 @@ export default function BookingForm({ isDark = false, mode = "hero" }: BookingFo
                   <label className={labelCls}>
                     Service <span className="text-gold font-arabic font-normal">نوع الخدمة</span> *
                   </label>
-                  <select required className={`${fieldCls} ${isDark ? "bg-[#16182a]" : "bg-[#fafaf8]"}`}>
+                  <select required className={`${fieldCls} ${isDark ? "bg-[#1456B8]" : "bg-[#F5FAFF]"}`}>
                     <option value="">Select Service / اختر الخدمة</option>
                     {servicesData.map((s) => (
                       <option key={s.slug} value={s.slug}>{s.title}</option>
@@ -187,7 +187,7 @@ export default function BookingForm({ isDark = false, mode = "hero" }: BookingFo
                   <label className={labelCls}>
                     Service Category <span className="text-gold font-arabic font-normal">نوع الخدمة</span> *
                   </label>
-                  <select required className={`${fieldCls} ${isDark ? "bg-[#16182a]" : "bg-[#fafaf8]"}`}>
+                  <select required className={`${fieldCls} ${isDark ? "bg-[#1456B8]" : "bg-[#F5FAFF]"}`}>
                     <option value="">Select Service / اختر الخدمة</option>
                     {servicesData.map((s) => (
                       <option key={s.slug} value={s.slug}>{s.title}</option>
@@ -212,7 +212,7 @@ export default function BookingForm({ isDark = false, mode = "hero" }: BookingFo
             <button
               type="submit"
               disabled={status === "loading"}
-              className="w-full bg-[#4a6fa5] hover:bg-[#3b5a8a] active:bg-[#2c3e5e] text-white font-bold py-3.5 sm:py-4 rounded-xl shadow-sm hover:shadow transition-colors flex items-center justify-center gap-2 text-sm sm:text-base disabled:opacity-70"
+              className="w-full bg-[#1E6DDB] hover:bg-[#1456B8] active:bg-[#0B3D91] text-white font-bold py-3.5 sm:py-4 rounded-xl shadow-sm hover:shadow transition-colors flex items-center justify-center gap-2 text-sm sm:text-base disabled:opacity-70"
             >
               {status === "loading" ? (
                 <Loader2 className="w-5 h-5 animate-spin" />

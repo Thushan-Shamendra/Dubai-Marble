@@ -10,19 +10,22 @@
 }
 
 :root {
-  --gold: #c9a84c;
-  --gold-light: #e8c97b;
-  --gold-dark: #9a7d2e;
-  --dark: #0d0d1a;
-  --dark-sec: #13132a;
-  --dark-card: #1a1a30;
-  --slate: #1e1e38;
+  --gold: #4DA3FF;
+  --gold-light: #4DA3FF;
+  --gold-dark: #0B3D91;
+  --primary-dark: #0B3D91;
+  --primary-blue: #1456B8;
+  --secondary-blue: #1E6DDB;
+  --dark: #0B3D91;
+  --dark-sec: #1456B8;
+  --dark-card: #1456B8;
+  --slate: #1E6DDB;
   --white: #ffffff;
-  --off-white: #f8f7f4;
-  --gray-bg: #f3f3f7;
-  --gray-text: #6e6e82;
-  --gray-light: #e2e2ec;
-  --accent: #7b6ef6;
+  --off-white: #F5FAFF;
+  --gray-bg: #EAF4FF;
+  --gray-text: #5B6472;
+  --gray-light: #D6E4F5;
+  --accent: #4DA3FF;
   --radius-sm: 8px;
   --radius: 14px;
   --radius-lg: 22px;
@@ -39,7 +42,7 @@ html {
 
 body {
   font-family: var(--font-main);
-  color: #1a1a2e;
+  color: #1F2937;
   background-color: #ffffff;
   line-height: 1.6;
   overflow-x: hidden;
@@ -394,7 +397,7 @@ img {
 /* --- PAGE HERO BANNER (FOR INNER PAGES) --- */
 .page-hero {
   position: relative;
-  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-sec) 60%, #171738 100%);
+  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-sec) 60%, #1456B8 100%);
   padding: 80px 0 90px;
   color: var(--white);
   overflow: hidden;
@@ -450,7 +453,7 @@ img {
 .hero {
   position: relative;
   min-height: 92vh;
-  background: linear-gradient(135deg, var(--dark) 0%, #0a0a1f 45%, #12122a 100%);
+  background: linear-gradient(135deg, var(--dark) 0%, #0B3D91 45%, #0B3D91 100%);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -462,7 +465,7 @@ img {
   background:
     radial-gradient(ellipse 80% 60% at 65% 35%, rgba(201, 168, 76, 0.08) 0%, transparent 70%),
     radial-gradient(ellipse 60% 80% at 15% 85%, rgba(123, 110, 246, 0.07) 0%, transparent 70%),
-    linear-gradient(135deg, #0d0d1a 0%, #0a0a1f 100%);
+    linear-gradient(135deg, #0B3D91 0%, #0B3D91 100%);
 }
 
 .hero-orb {
@@ -1266,7 +1269,7 @@ img {
 
 /* --- CTA BANNER --- */
 .cta-band {
-  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-sec) 60%, #151532 100%);
+  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-sec) 60%, #1456B8 100%);
   padding: 76px 0;
   color: var(--white);
   position: relative;

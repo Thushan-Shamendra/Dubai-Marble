@@ -10,7 +10,7 @@ interface SectionDividerProps {
 
 export default function SectionDivider({
   type = "peak-up",
-  color = "#fafaf8",
+  color = "#F5FAFF",
   className = "",
   position = "top",
   height = 44,

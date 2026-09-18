@@ -4,7 +4,7 @@ import { ShieldCheck, Award, Wrench, Sparkles, CheckCircle2 } from "lucide-react
 
 export default function TrustBadges() {
   return (
-    <div className="py-8 bg-[#0e101f] border-y border-gold/20 text-white">
+    <div className="py-8 bg-[#0B3D91] border-y border-gold/20 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-center">
           {[

@@ -4,24 +4,24 @@ import { Clock, MapPin, Phone, ShieldCheck, MessageCircle } from "lucide-react";
 
 export default function TopBar() {
   return (
-    <div className="bg-[#0f172a] text-[#94a3b8] text-[11.5px] sm:text-[12px] py-2 border-b border-[#c9a96e]/25">
+    <div className="bg-[#0B3D91] text-[#94a3b8] text-[11.5px] sm:text-[12px] py-2 border-b border-[#4DA3FF]/25">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
         {/* Left info items */}
         <div className="flex items-center gap-4 sm:gap-6 truncate">
           <div className="flex items-center gap-1.5">
-            <Clock className="w-3.5 h-3.5 text-[#c9a96e] shrink-0" />
+            <Clock className="w-3.5 h-3.5 text-[#4DA3FF] shrink-0" />
             <span className="text-slate-200 font-medium">
               Open Daily: 9:00 AM – 6:00 PM <span className="text-slate-500 font-arabic mx-1">· مفتوح يومياً</span>
             </span>
           </div>
           <div className="hidden md:flex items-center gap-1.5">
-            <MapPin className="w-3.5 h-3.5 text-[#c9a96e] shrink-0" />
+            <MapPin className="w-3.5 h-3.5 text-[#4DA3FF] shrink-0" />
             <span>
               Al Quoz 1, Dubai, UAE <span className="text-slate-500 font-arabic">· القوز 1، دبي</span>
             </span>
           </div>
           <div className="hidden lg:flex items-center gap-1.5 text-slate-300">
-            <ShieldCheck className="w-3.5 h-3.5 text-[#c9a96e] shrink-0" />
+            <ShieldCheck className="w-3.5 h-3.5 text-[#4DA3FF] shrink-0" />
             <span>Licensed & Insured Stone Experts</span>
           </div>
         </div>
@@ -40,11 +40,11 @@ export default function TopBar() {
 
           <a
             href="tel:+971522774953"
-            className="flex items-center gap-1.5 text-white font-bold hover:text-[#c9a96e] transition-colors bg-white/10 hover:bg-white/15 px-3 py-1 rounded-full border border-[#c9a96e]/40 shadow-sm"
+            className="flex items-center gap-1.5 text-white font-bold hover:text-[#4DA3FF] transition-colors bg-white/10 hover:bg-white/15 px-3 py-1 rounded-full border border-[#4DA3FF]/40 shadow-sm"
           >
-            <Phone className="w-3 h-3 text-[#c9a96e]" />
+            <Phone className="w-3 h-3 text-[#4DA3FF]" />
             <span>+971 52 277 4953</span>
-            <span className="hidden sm:inline text-[10px] text-[#c9a96e] font-arabic ml-1">اتصل بنا</span>
+            <span className="hidden sm:inline text-[10px] text-[#4DA3FF] font-arabic ml-1">اتصل بنا</span>
           </a>
         </div>
       </div>

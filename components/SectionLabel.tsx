@@ -16,10 +16,10 @@ export default function SectionLabel({
   if (variant === "minimal") {
     return (
       <div className={`inline-flex items-center gap-2 mb-3 ${className}`}>
-        <span className="w-2.5 h-2.5 bg-[#ea580c] inline-block shrink-0 rounded-[1px]" />
+        <span className="w-2.5 h-2.5 bg-[#1456B8] inline-block shrink-0 rounded-[1px]" />
         <span
           className={`font-black uppercase tracking-wider text-xs sm:text-sm ${
-            isDark ? "text-white" : "text-[#1e3a5f]"
+            isDark ? "text-white" : "text-[#0B3D91]"
           }`}
         >
           {children}
@@ -27,7 +27,7 @@ export default function SectionLabel({
         {arabic && (
           <span
             className={`font-arabic text-xs font-semibold normal-case ${
-              isDark ? "text-amber-400" : "text-[#ea580c]"
+              isDark ? "text-[#1E6DDB]" : "text-[#1456B8]"
             }`}
           >
             · {arabic}
@@ -41,14 +41,14 @@ export default function SectionLabel({
     <div
       className={`inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-md border text-[11px] sm:text-[12px] font-extrabold uppercase tracking-wider mb-4 shadow-sm transition-all ${
         isDark
-          ? "bg-[#2c2a27]/90 border-slate-700 text-[#d9d2ca]"
-          : "bg-[#ede9e3] border-[#d6cfc5] text-[#1e3a5f]"
+          ? "bg-[#1F2937]/90 border-[#1456B8]/40 text-[#d9d2ca]"
+          : "bg-[#EAF4FF] border-[#C5D9F0] text-[#0B3D91]"
       } ${className}`}
     >
-      <span className="w-2.5 h-2.5 bg-[#ea580c] inline-block shrink-0 rounded-[1px]" />
+      <span className="w-2.5 h-2.5 bg-[#1456B8] inline-block shrink-0 rounded-[1px]" />
       <span className="tracking-wider">{children}</span>
       {arabic && (
-        <span className="font-arabic text-[11.5px] font-semibold normal-case border-l border-[#d6cfc5] pl-2 text-[#8a6c3e]">
+        <span className="font-arabic text-[11.5px] font-semibold normal-case border-l border-[#C5D9F0] pl-2 text-[#0B3D91]">
           {arabic}
         </span>
       )}

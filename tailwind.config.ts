@@ -9,16 +9,38 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        gold: { DEFAULT: "#f59e0b", light: "#fbbf24", dark: "#d97706", warm: "#c9a84c" },
-        brand: {
-          amber: "#f59e0b",
-          coral: "#f59e0b",
-          violet: "#d97706",
-          azure: "#f59e0b",
-          cyan: "#fbbf24",
-          gold: "#f59e0b",
+        // Accent token (class name kept as "gold" for compatibility)
+        gold: {
+          DEFAULT: "#4DA3FF",
+          light: "#4DA3FF",
+          dark: "#0B3D91",
+          warm: "#1E6DDB",
         },
-        dark: { DEFAULT: "#0b0c16", sec: "#121324", card: "#181932", slate: "#1e2040" },
+        brand: {
+          amber: "#4DA3FF",
+          coral: "#1E6DDB",
+          violet: "#0B3D91",
+          azure: "#4DA3FF",
+          cyan: "#4DA3FF",
+          gold: "#1E6DDB",
+        },
+        // Dark surfaces remapped from black/navy → professional blue
+        dark: {
+          DEFAULT: "#0B3D91",
+          sec: "#1456B8",
+          card: "#1456B8",
+          slate: "#1E6DDB",
+        },
+        primary: {
+          dark: "#0B3D91",
+          DEFAULT: "#1456B8",
+          bright: "#1E6DDB",
+          accent: "#4DA3FF",
+        },
+        surface: {
+          light: "#EAF4FF",
+          muted: "#F5FAFF",
+        },
       },
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],
@@ -32,10 +54,10 @@ const config: Config = {
         "logo-glow": "logo-glow 4s ease-in-out infinite alternate",
       },
       backgroundImage: {
-        "gold-gradient": "linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #fbbf24 100%)",
-        "brand-gradient": "linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #fbbf24 100%)",
-        "azure-gradient": "linear-gradient(135deg, #d97706, #fbbf24)",
-        "violet-gradient": "linear-gradient(135deg, #d97706, #fbbf24)",
+        "gold-gradient": "linear-gradient(135deg, #0B3D91 0%, #1456B8 50%, #1E6DDB 100%)",
+        "brand-gradient": "linear-gradient(135deg, #0B3D91 0%, #1456B8 50%, #4DA3FF 100%)",
+        "azure-gradient": "linear-gradient(135deg, #1456B8, #4DA3FF)",
+        "violet-gradient": "linear-gradient(135deg, #0B3D91, #1456B8)",
       },
     },
   },
