@@ -46,8 +46,8 @@ export default function GalleryView() {
             onClick={() => setActive(f.id)}
             className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${
               active === f.id
-                ? "brand-gradient text-white shadow-md scale-105 font-bold"
-                : "bg-[#F5FAFF] text-[#1F2937] border border-[#D6E4F5] hover:border-gold hover:text-gold"
+                ? "bg-[#2F80ED] text-white shadow-md scale-105 font-bold"
+                : "bg-white text-[#667085] border border-[#D9E2EC] hover:border-[#1557B0] hover:text-[#1557B0]"
             }`}
           >
             {f.label}
@@ -67,13 +67,13 @@ export default function GalleryView() {
               exit={{  opacity: 0, scale: .94 }}
               transition={{ duration: .35, delay: i * 0.07 }}
               onClick={() => setLightbox(item)}
-              className="group cursor-pointer rounded-2xl overflow-hidden border border-[#D6E4F5] shadow-sm hover:shadow-xl transition-shadow"
+              className="group cursor-pointer rounded-2xl overflow-hidden border border-[#D9E2EC] shadow-sm hover:shadow-xl transition-shadow"
             >
               <div className="img-card aspect-[4/3] relative">
                 <Image src={item.src} alt={item.title} fill className="object-cover" sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" />
                 <div className="img-card-overlay" />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <div className="bg-dark/60 backdrop-blur-sm p-3 rounded-full">
+                  <div className="bg-[#10233F]/70 backdrop-blur-sm p-3 rounded-full">
                     <ZoomIn className="w-6 h-6 text-white" />
                   </div>
                 </div>
@@ -83,9 +83,9 @@ export default function GalleryView() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 bg-[#F5FAFF]">
-                <div className="font-bold text-[#1F2937] text-[15px]">{item.title}</div>
-                <div className="text-xs text-gold font-semibold mt-1">{item.location}</div>
+              <div className="p-4 bg-white">
+                <div className="font-bold text-[#10233F] text-[15px]">{item.title}</div>
+                <div className="text-xs text-[#98A2B3] font-semibold mt-1">{item.location}</div>
               </div>
             </motion.div>
           ))}
@@ -115,9 +115,9 @@ export default function GalleryView() {
               <div className="p-6 flex items-start justify-between gap-4">
                 <div>
                   <h3 className="font-bold text-white text-lg">{lightbox.title}</h3>
-                  <p className="text-gold text-sm mt-1">{lightbox.location} · GridsPro International</p>
+                  <p className="text-[#2F80ED] text-sm mt-1">{lightbox.location} · GridsPro International</p>
                 </div>
-                <button onClick={() => setLightbox(null)} className="p-2 rounded-full bg-[#F5FAFF]/10 hover:bg-[#F5FAFF]/20 text-white">
+                <button onClick={() => setLightbox(null)} className="p-2 rounded-full bg-white/10 hover:bg-white/20 text-white">
                   <X className="w-5 h-5" />
                 </button>
               </div>

@@ -9,37 +9,37 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Accent token (class name kept as "gold" for compatibility)
+        // Subtle gold / warm accent token (used sparingly)
         gold: {
-          DEFAULT: "#4DA3FF",
-          light: "#4DA3FF",
-          dark: "#0B3D91",
-          warm: "#1E6DDB",
+          DEFAULT: "#C89B3C",
+          light: "#DFB35A",
+          dark: "#A67C26",
+          warm: "#C89B3C",
         },
         brand: {
-          amber: "#4DA3FF",
-          coral: "#1E6DDB",
-          violet: "#0B3D91",
-          azure: "#4DA3FF",
-          cyan: "#4DA3FF",
-          gold: "#1E6DDB",
+          amber: "#C89B3C",
+          coral: "#2F80ED",
+          violet: "#10233F",
+          azure: "#2F80ED",
+          cyan: "#2F80ED",
+          gold: "#C89B3C",
         },
-        // Dark surfaces remapped from black/navy → professional blue
+        // Dark surfaces: Dark Navy & Deep Blue
         dark: {
-          DEFAULT: "#0B3D91",
-          sec: "#1456B8",
-          card: "#1456B8",
-          slate: "#1E6DDB",
+          DEFAULT: "#10233F",
+          sec: "#102A56",
+          card: "#102A56",
+          slate: "#1F2937",
         },
         primary: {
-          dark: "#0B3D91",
-          DEFAULT: "#1456B8",
-          bright: "#1E6DDB",
-          accent: "#4DA3FF",
+          dark: "#10233F",
+          DEFAULT: "#1557B0",
+          bright: "#2F80ED",
+          accent: "#2F80ED",
         },
         surface: {
-          light: "#EAF4FF",
-          muted: "#F5FAFF",
+          light: "#EEF5FF",
+          muted: "#F7F9FC",
         },
       },
       fontFamily: {
@@ -54,10 +54,10 @@ const config: Config = {
         "logo-glow": "logo-glow 4s ease-in-out infinite alternate",
       },
       backgroundImage: {
-        "gold-gradient": "linear-gradient(135deg, #0B3D91 0%, #1456B8 50%, #1E6DDB 100%)",
-        "brand-gradient": "linear-gradient(135deg, #0B3D91 0%, #1456B8 50%, #4DA3FF 100%)",
-        "azure-gradient": "linear-gradient(135deg, #1456B8, #4DA3FF)",
-        "violet-gradient": "linear-gradient(135deg, #0B3D91, #1456B8)",
+        "gold-gradient": "linear-gradient(135deg, #C89B3C 0%, #DFB35A 100%)",
+        "brand-gradient": "linear-gradient(135deg, #10233F 0%, #1557B0 50%, #2F80ED 100%)",
+        "azure-gradient": "linear-gradient(135deg, #1557B0, #2F80ED)",
+        "violet-gradient": "linear-gradient(135deg, #10233F, #1557B0)",
       },
     },
   },

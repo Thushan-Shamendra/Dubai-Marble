@@ -9,13 +9,13 @@ export default function FaqItem({
   const [open, setOpen] = useState(defaultOpen);
 
   return (
-    <div className={`bg-[#F5FAFF] rounded-2xl border overflow-hidden transition-colors ${open ? "border-[#1456B8]/40 shadow-md" : "border-[#D6E4F5] shadow-sm"}`}>
+    <div className={`bg-white rounded-2xl border overflow-hidden transition-colors ${open ? "border-[#1557B0]/40 shadow-md" : "border-[#D9E2EC] shadow-sm"}`}>
       <button
         onClick={() => setOpen(!open)}
-        className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 font-bold text-[#1F2937] text-sm sm:text-base focus:outline-none"
+        className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 font-bold text-[#10233F] text-sm sm:text-base focus:outline-none"
       >
         <span>{question}</span>
-        <div className={`w-8 h-8 rounded-full flex items-center justify-center text-[#0B3D91] transition-all shrink-0 ${open ? "bg-[#0B3D91] text-white rotate-180" : "bg-[#EAF4FF]"}`}>
+        <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all shrink-0 ${open ? "bg-[#1557B0] text-white rotate-180" : "bg-[#EEF5FF] text-[#1557B0]"}`}>
           <ChevronDown className="w-4 h-4" />
         </div>
       </button>
@@ -28,7 +28,7 @@ export default function FaqItem({
             transition={{ duration: .28, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <div className="px-6 pb-5 text-sm text-[#5B6472] leading-relaxed border-t border-[#D6E4F5] pt-4">
+            <div className="px-6 pb-5 text-sm text-[#667085] leading-relaxed border-t border-[#D9E2EC] pt-4">
               {answer}
             </div>
           </motion.div>

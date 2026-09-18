@@ -22,7 +22,7 @@ export default function PageHeader({
   image,
 }: PageHeaderProps) {
   return (
-    <div className="relative py-16 sm:py-24 md:py-28 bg-[#0B3D91] text-white overflow-hidden shadow-xl">
+    <div className="relative py-16 sm:py-24 md:py-28 bg-[#10233F] text-white overflow-hidden shadow-xl">
       <div className="absolute inset-0 z-0">
         <Image
           src={image}
@@ -32,7 +32,7 @@ export default function PageHeader({
           sizes="100vw"
           className="object-cover object-center opacity-35"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0B3D91] via-[#0B3D91]/85 to-[#0B3D91]/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#10233F] via-[#10233F]/85 to-[#10233F]/60" />
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pb-2">
@@ -41,11 +41,11 @@ export default function PageHeader({
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55 }}
         >
-          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-[#1E6DDB]/15 border border-[#1E6DDB]/30 text-[#1E6DDB] text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-3 sm:mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#1E6DDB]" />
-            <Link href="/" className="hover:underline text-[#1E6DDB]">Home</Link>
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-3 sm:mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#2F80ED]" />
+            <Link href="/" className="hover:underline text-[#2F80ED]">Home</Link>
             <span>&bull;</span>
-            <span className="text-white/80">{breadcrumb}</span>
+            <span className="text-[#D0D5DD]">{breadcrumb}</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white mb-2 sm:mb-3 drop-shadow-md">
@@ -53,20 +53,20 @@ export default function PageHeader({
           </h1>
 
           {arTitle && (
-            <div className="text-gold text-xs sm:text-sm md:text-base font-semibold tracking-wide mb-2 sm:mb-3">
+            <div className="text-[#C89B3C] text-xs sm:text-sm md:text-base font-semibold tracking-wide mb-2 sm:mb-3">
               {arTitle}
             </div>
           )}
 
           {subtitle && (
-            <p className="text-gray-200 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed drop-shadow px-2">
+            <p className="text-[#D0D5DD] text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed drop-shadow px-2">
               {subtitle}
             </p>
           )}
         </motion.div>
       </div>
 
-      <SectionDivider type="peak-down" color="#F5FAFF" position="bottom" height={32} />
+      <SectionDivider type="peak-down" color="#F7F9FC" position="bottom" height={32} />
     </div>
   );
 }

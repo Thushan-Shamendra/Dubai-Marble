@@ -27,30 +27,30 @@ export default function ServicesPage() {
         image={imgs.servicesHero}
       />
 
-      <section className="py-24 bg-[#EAF4FF]">
+      <section className="py-24 bg-[#F7F9FC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center max-w-2xl mx-auto mb-16">
             <SectionLabel arabic="خدماتنا الشاملة">All Services</SectionLabel>
-            <h2 className="text-3xl font-black text-[#1F2937]">Comprehensive Treatments for Every Stone</h2>
+            <h2 className="text-3xl font-black text-[#10233F]">Comprehensive Treatments for Every Stone</h2>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {servicesData.map((s, i) => (
               <AnimatedSection key={s.slug} delay={i * 0.08}>
-                <div className="group bg-[#F5FAFF] rounded-2xl overflow-hidden border border-[#D6E4F5] shadow-sm hover:shadow-xl transition-all hover:-translate-y-1.5 flex flex-col h-full">
+                <div className="group bg-white rounded-2xl overflow-hidden border border-[#D9E2EC] shadow-sm hover:shadow-xl hover:border-[#1557B0]/40 transition-all hover:-translate-y-1.5 flex flex-col h-full">
                   <div className="img-card aspect-[16/10] relative">
                     <Image src={serviceImages[s.slug] ?? imgs.svcFloor} alt={s.title} fill className="object-cover" sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw" />
                     <div className="img-card-overlay" />
-                    <div className="absolute top-3 right-3 bg-dark/80 backdrop-blur-sm px-3 py-1 rounded-full border border-gold/30">
-                      <span className="text-gold text-[11px] font-bold">Free Inspection</span>
+                    <div className="absolute top-3 right-3 bg-[#10233F]/90 backdrop-blur-sm px-3 py-1 rounded-full border border-white/20">
+                      <span className="text-white text-[11px] font-bold">Free Inspection</span>
                     </div>
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
-                    <div className="text-[12px] font-semibold text-gold mb-1 font-arabic">{s.arTitle}</div>
-                    <h2 className="text-xl font-bold text-[#1F2937] mb-2 group-hover:text-gold transition-colors">{s.title}</h2>
-                    <p className="text-[#5B6472] text-sm leading-relaxed mb-6 flex-grow">{s.description}</p>
+                    <div className="text-[12px] font-semibold text-[#1557B0] mb-1 font-arabic">{s.arTitle}</div>
+                    <h2 className="text-xl font-bold text-[#10233F] mb-2 group-hover:text-[#1557B0] transition-colors">{s.title}</h2>
+                    <p className="text-[#667085] text-sm leading-relaxed mb-6 flex-grow">{s.description}</p>
                     <Link href={`/services/${s.slug}`}
-                      className="bg-[#1456B8] hover:bg-[#0B3D91] text-white font-bold text-xs px-5 py-2.5 rounded-lg shadow-sm self-start flex items-center gap-2 transition-colors">
+                      className="bg-[#2F80ED] hover:bg-[#1557B0] text-white font-bold text-xs px-5 py-2.5 rounded-lg shadow-sm self-start flex items-center gap-2 transition-colors">
                       <span>View Details</span>
                       <span className="font-arabic font-normal text-[11px]">عرض التفاصيل</span>
                       <ArrowRight className="w-3.5 h-3.5 ml-1" />

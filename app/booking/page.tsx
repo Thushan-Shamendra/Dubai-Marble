@@ -16,21 +16,21 @@ export default function BookingPage() {
         image={imgs.bookingHero}
       />
 
-      <section className="py-24 bg-[#EAF4FF]">
+      <section className="py-24 bg-[#F7F9FC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Top 3 Trust Badges */}
           <div className="max-w-2xl mx-auto grid grid-cols-3 gap-4 mb-16">
             {[
-              { icon: <CheckCircle2 className="w-6 h-6 text-gold mx-auto mb-1.5" />, label: "100% Free", sub: "No obligation" },
-              { icon: <Clock className="w-6 h-6 text-gold mx-auto mb-1.5" />,        label: "30-Min Reply", sub: "Rapid confirmation" },
-              { icon: <MapPin className="w-6 h-6 text-gold mx-auto mb-1.5" />,       label: "All Dubai",  sub: "Mobile dispatch" },
+              { icon: <CheckCircle2 className="w-6 h-6 text-[#1557B0] mx-auto mb-1.5" />, label: "100% Free", sub: "No obligation" },
+              { icon: <Clock className="w-6 h-6 text-[#1557B0] mx-auto mb-1.5" />,        label: "30-Min Reply", sub: "Rapid confirmation" },
+              { icon: <MapPin className="w-6 h-6 text-[#1557B0] mx-auto mb-1.5" />,       label: "All Dubai",  sub: "Mobile dispatch" },
             ].map(({ icon, label, sub }) => (
               <AnimatedSection key={label}>
-                <div className="bg-[#F5FAFF] text-center p-5 rounded-2xl border border-[#D6E4F5] shadow-sm">
+                <div className="bg-white text-center p-5 rounded-2xl border border-[#D9E2EC] shadow-sm">
                   {icon}
-                  <div className="font-bold text-[#1F2937] text-sm">{label}</div>
-                  <div className="text-xs text-[#5B6472] mt-0.5">{sub}</div>
+                  <div className="font-bold text-[#10233F] text-sm">{label}</div>
+                  <div className="text-xs text-[#667085] mt-0.5">{sub}</div>
                 </div>
               </AnimatedSection>
             ))}
