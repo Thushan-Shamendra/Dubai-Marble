@@ -102,24 +102,21 @@ export default function BeforeAfterSlider({
           </div>
         </div>
 
-        {/* BEFORE IMAGE (Clipped overlay) */}
+        {/* BEFORE IMAGE (Full width, clipped with clipPath to match sliderPosition) */}
         <div
-          className="absolute inset-0 h-full overflow-hidden"
-          style={{ width: `${sliderPosition}%` }}
+          className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none"
+          style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
         >
-          <div className="relative w-full h-full" style={{ width: containerRef.current ? `${containerRef.current.clientWidth}px` : '100vw' }}>
-            <Image
-              src={beforeImage}
-              alt="Before marble polishing"
-              fill
-              className="object-cover filter contrast-75 brightness-75 grayscale-[30%]"
-              sizes="(max-width: 768px) 100vw, 1200px"
-            />
-            <div className="absolute inset-0 bg-[#10233F]/25" />
-          </div>
+          <Image
+            src={beforeImage}
+            alt="Before marble polishing - dull scratched and stained stone"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 1200px"
+          />
 
           {/* Before Label */}
-          <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-[#10233F]/90 backdrop-blur-md border border-white/20 text-white text-[10px] sm:text-xs md:text-sm font-bold px-3 py-1.5 sm:px-4 sm:py-2 rounded-full shadow-lg z-10">
+          <div className="absolute top-3 left-3 sm:top-4 sm:left-4 bg-[#10233F]/90 backdrop-blur-md border border-white/20 text-white text-[10px] sm:text-xs md:text-sm font-bold px-3 py-1.5 sm:px-4 sm:py-2 rounded-full shadow-lg z-10 pointer-events-auto">
             {beforeLabel}
           </div>
         </div>

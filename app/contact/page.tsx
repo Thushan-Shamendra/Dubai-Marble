@@ -59,7 +59,7 @@ export default function ContactPage() {
 
             {/* Map placeholder with real image */}
             <div className="relative h-48 rounded-2xl overflow-hidden border border-[#D9E2EC]">
-              <Image src={imgs.gal2} alt="Dubai service areas" fill className="object-cover" sizes="(max-width:1024px) 100vw, 40vw" />
+              <Image src={imgs.gal2} alt="Restored marble flooring across luxury Dubai properties" fill className="object-cover" sizes="(max-width:1024px) 100vw, 40vw" />
               <div className="absolute inset-0 bg-[#10233F]/85 flex items-center justify-center text-center p-6">
                 <div>
                   <MapPin className="w-8 h-8 text-[#2F80ED] mx-auto mb-2" />

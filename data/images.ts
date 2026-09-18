@@ -1,45 +1,53 @@
-const U = (id: string, w = 1400, q = 80) =>
-  `https://images.unsplash.com/photo-${id}?w=${w}&q=${q}&auto=format&fit=crop`;
-
+// Authentic Marble Polishing & Stone Restoration Image Library
 export const imgs = {
-  // Main Heroes
-  heroBg:        U("1618221195710-dd6b41faaea6", 1920, 85), // luxury marble floor reflection
-  aboutHero:     U("1600585154340-be6161a56a0c", 1600, 85), // luxury villa marble
-  servicesHero:  U("1600565193348-f74bd3c7ccdf", 1600, 85), // elegant marble interior
-  galleryHero:   U("1590381105924-c72589b9ef3f", 1600, 85), // luxury 5-star hotel lobby marble floor
-  reviewsHero:   U("1582719478250-c89cae4dc85b", 1600, 85), // grand hall marble
-  faqsHero:      U("1615529182904-14819c35db37", 1600, 85), // white marble texture
-  blogHero:      U("1600585152220-90363fe7e115", 1600, 85), // luxury marble kitchen & floor
-  bookingHero:   U("1600210492486-724fe5c67fb0", 1600, 85), // luxury marble living room
-  contactHero:   U("1512917774080-9991f1c4c750", 1600, 85), // Dubai luxury villa
+  // Main Heroes (Replacing generic living rooms, sofas, and exteriors with genuine polished luxury marble)
+  heroBg:        "/images/hero_bg_marble.jpg",            // Luxury grand hall with mirror-polished marble floor
+  aboutHero:     "/images/luxury_lobby_marble.jpg",       // 5-star hotel lobby diamond polished Calacatta marble floor
+  servicesHero:  "/images/svc_floor_polishing.jpg",       // Technician operating Italian rotary marble floor polisher
+  galleryHero:   "/images/luxury_lobby_marble.jpg",       // Inlaid geometric marble floor diamond mirror shine
+  reviewsHero:   "/images/hero_bg_marble.jpg",            // Mirror-finish polished marble hall with chandelier reflections
+  faqsHero:      "/images/slider_after.jpg",              // Pristine polished Carrara marble floor surface
+  blogHero:      "/images/svc_countertop_polishing.jpg",  // Kitchen marble island countertop restoration
+  bookingHero:   "/images/hero_bg_marble.jpg",            // High-gloss polished luxury marble floor
+  contactHero:   "/images/luxury_lobby_marble.jpg",       // Luxury Downtown Dubai hotel marble reception
 
-  // About Section Details
-  aboutTeam:     U("1522202176988-66273c2fd55f", 900, 80),  // certified professional team
-  aboutWork:     U("1558618666-fcd25c85cd64", 900, 80),     // diamond polishing machine
-  aboutLobby:    U("1590381105924-c72589b9ef3f", 900, 80),  // 5-star hotel lobby
+  // About Section Details (Replacing generic office/students and lawnmowers with real technicians & edge polishers)
+  aboutTeam:     "/images/machine_edge_polishing.jpg",    // Certified technician doing precision marble edge polishing
+  aboutWork:     "/images/svc_floor_polishing.jpg",       // Professional technician operating Klindex floor polisher in Dubai
+  aboutLobby:    "/images/luxury_lobby_marble.jpg",       // 5-Star Downtown Dubai hotel lobby marble restoration
 
-  // Services Specific Images
-  svcFloor:      U("1618221195710-dd6b41faaea6", 800, 80),  // floor polishing
-  svcCleaning:   U("1581578731548-c64695cc6952", 800, 80),  // deep cleaning
-  svcGrinding:   U("1558618666-fcd25c85cd64", 800, 80),     // grinding & lippage
-  svcCounter:    U("1556909114-f6e7ad7d3136", 800, 80),     // countertop polishing
-  svcStain:      U("1615529182904-14819c35db37", 800, 80),  // stain removal
-  svcCrack:      U("1600607687939-ce8a6c25118c", 800, 80),  // crack repair
+  // Services Specific Images (Directly matching each service requirement)
+  svcFloor:      "/images/svc_floor_polishing.jpg",       // Worker operating Klindex floor polishing machine
+  svcCleaning:   "/images/svc_deep_cleaning.jpg",         // Industrial rotary scrubber machine & slurry extraction on marble
+  svcGrinding:   "/images/svc_grinding_buffing.jpg",      // Heavy planetary floor grinder leveling tile lippage
+  svcCounter:    "/images/svc_countertop_polishing.jpg",  // Handheld variable-speed polisher on kitchen marble countertop
+  svcStain:      "/images/svc_stain_removal.jpg",         // Specialist applying poultice paste & nano-penetrating sealer
+  svcCrack:      "/images/svc_crack_repair.jpg",          // Specialist filling marble fracture with color-matched epoxy resin
+
+  // Machine Operation & Detailing
+  machineGrinder: "/images/svc_grinding_buffing.jpg",     // Planetary marble grinding machine leveling lippage
+  machinePolisher:"/images/svc_floor_polishing.jpg",      // Rotary floor polishing machine operating on marble
+  diamondPads:    "/images/machine_diamond_pads.jpg",     // Rotary diamond polishing pads 100 to 3000 grit on machine head
+  edgePolisher:   "/images/machine_edge_polishing.jpg",   // Handheld diamond edge polisher along baseboards
 
   // Gallery Portfolio Items
-  gal1:          U("1618221195710-dd6b41faaea6", 800, 80),  // Italian Carrara floor
-  gal2:          U("1590381105924-c72589b9ef3f", 800, 80),  // Hotel lobby diamond finish
-  gal3:          U("1556909114-f6e7ad7d3136", 800, 80),     // Kitchen island restoration
-  gal4:          U("1600607687644-c7171b42498f", 800, 80),  // Dining marble crack repair
-  gal5:          U("1584622650111-993a426fbf0a", 800, 80),  // Deep cleaning & grout
-  gal6:          U("1600566753190-17f0baa2a6c3", 800, 80),  // Travertine restoration
+  gal1:          "/images/svc_floor_polishing.jpg",       // Italian Carrara floor polishing in Dubai villa
+  gal2:          "/images/luxury_lobby_marble.jpg",       // Hotel lobby diamond finish in Downtown Dubai
+  gal3:          "/images/svc_countertop_polishing.jpg",  // Kitchen island wet diamond restoration
+  gal4:          "/images/svc_crack_repair.jpg",          // Marble crack resin repair and flush polishing
+  gal5:          "/images/svc_deep_cleaning.jpg",         // Deep cleaning & grout extraction restoration
+  gal6:          "/images/travertine_restoration.jpg",    // Polished Roman beige travertine restoration
 
   // Blog Thumbnails
-  blog1:         U("1615529182904-14819c35db37", 800, 75),  // Desert dust & marble
-  blog2:         U("1556911220-e15b29be8c8f", 800, 75),     // Cleaning products
-  blog3:         U("1558618666-fcd25c85cd64", 800, 75),     // Grinding vs crystallization
+  blog1:         "/images/machine_diamond_pads.jpg",      // Diamond pads & abrasive technology
+  blog2:         "/images/svc_stain_removal.jpg",         // Safe marble stain removal & nano-sealing
+  blog3:         "/images/svc_grinding_buffing.jpg",      // Planetary grinding vs crystallization methods
 
-  // Live Visual Proof Slider Images
-  sliderBefore:  U("1615529182904-14819c35db37", 1400, 85), // dull scratched unpolished marble surface
-  sliderAfter:   U("1618221195710-dd6b41faaea6", 1400, 85), // high-gloss 5-star mirror polished marble floor
+  // Live Visual Proof Slider Images (Replacing flat textures with genuine before/after)
+  sliderBefore:  "/images/slider_before.png",             // Scratched, dull, etched unpolished marble surface
+  sliderAfter:   "/images/slider_after.jpg",              // High-gloss mirror-reflective polished Carrara marble floor
+
+  // Video Posters & Thumbnails
+  videoPosterMachine: "/images/video_poster_machine.jpg", // Machinery operation video thumbnail
+  videoPosterHero:    "/images/hero_bg_marble.jpg",       // Hero video fallback poster
 };

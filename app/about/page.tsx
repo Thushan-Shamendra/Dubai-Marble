@@ -23,7 +23,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <AnimatedSection direction="left" className="relative">
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
-              <Image src={imgs.aboutWork} alt="Marble technician at work" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
+              <Image src={imgs.aboutWork} alt="Technician operating marble floor polishing machine in Dubai" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#10233F]/80 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="text-white font-bold text-base">Italian Diamond Wet-Polishing System</div>
@@ -31,7 +31,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="absolute -top-6 -right-6 w-40 h-40 rounded-2xl overflow-hidden border-4 border-white shadow-xl hidden sm:block">
-              <Image src={imgs.aboutLobby} alt="Luxury hotel marble lobby" fill className="object-cover" sizes="160px" />
+              <Image src={imgs.aboutLobby} alt="Restored diamond polished marble floor in Downtown Dubai luxury hotel lobby" fill className="object-cover" sizes="160px" />
             </div>
           </AnimatedSection>
 

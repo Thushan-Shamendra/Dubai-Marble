@@ -39,7 +39,7 @@ export default function ServicesPage() {
               <AnimatedSection key={s.slug} delay={i * 0.08}>
                 <div className="group bg-white rounded-2xl overflow-hidden border border-[#D9E2EC] shadow-sm hover:shadow-xl hover:border-[#1557B0]/40 transition-all hover:-translate-y-1.5 flex flex-col h-full">
                   <div className="img-card aspect-[16/10] relative">
-                    <Image src={serviceImages[s.slug] ?? imgs.svcFloor} alt={s.title} fill className="object-cover" sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw" />
+                    <Image src={serviceImages[s.slug] ?? imgs.svcFloor} alt={`${s.title} in Dubai - Professional Natural Stone Care`} fill className="object-cover" sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw" />
                     <div className="img-card-overlay" />
                     <div className="absolute top-3 right-3 bg-[#10233F]/90 backdrop-blur-sm px-3 py-1 rounded-full border border-white/20">
                       <span className="text-white text-[11px] font-bold">Free Inspection</span>

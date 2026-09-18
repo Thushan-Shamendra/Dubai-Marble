@@ -49,7 +49,7 @@ export default function BlogPage() {
               <AnimatedSection key={a.title} delay={i * 0.1}>
                 <div className="group bg-white rounded-2xl overflow-hidden border border-[#D9E2EC] shadow-sm hover:shadow-xl hover:border-[#1557B0]/40 transition-all hover:-translate-y-1.5 flex flex-col h-full">
                   <div className="img-card aspect-[16/10] relative">
-                    <Image src={a.src} alt={a.title} fill className="object-cover" sizes="(max-width:768px) 100vw, 33vw" />
+                    <Image src={a.src} alt={`${a.title} - Dubai Marble Polishing Insights`} fill className="object-cover" sizes="(max-width:768px) 100vw, 33vw" />
                     <div className="img-card-overlay" />
                   </div>
                   <div className="p-6 flex flex-col flex-grow">

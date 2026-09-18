@@ -38,7 +38,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
           <div className="lg:col-span-8">
             <AnimatedSection>
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-lg mb-8">
-                <Image src={serviceImages[service.slug] ?? imgs.svcFloor} alt={service.title} fill className="object-cover" sizes="(max-width:1024px) 100vw, 66vw" />
+                <Image src={serviceImages[service.slug] ?? imgs.svcFloor} alt={`${service.title} in Dubai - Professional Natural Stone Restoration`} fill className="object-cover" sizes="(max-width:1024px) 100vw, 66vw" />
               </div>
 
               <h2 className="text-2xl sm:text-3xl font-black text-[#10233F] mb-4">{service.title} — Dubai</h2>
@@ -109,7 +109,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
 
             <AnimatedSection direction="right" delay={0.1}>
               <div className="relative rounded-2xl overflow-hidden shadow-sm">
-                <Image src={imgs.aboutLobby} alt="Contact our Dubai team" width={400} height={250} className="object-cover w-full h-48" />
+                <Image src={imgs.aboutLobby} alt="5-Star marble polishing and stone restoration specialists in Dubai" width={400} height={250} className="object-cover w-full h-48" />
                 <div className="absolute inset-0 bg-[#10233F]/90 flex flex-col justify-end p-6">
                   <h3 className="font-black text-white text-base mb-1">Need Immediate Advice?</h3>
                   <p className="text-xs text-[#D0D5DD] mb-4">Speak directly with our senior stone technician.</p>

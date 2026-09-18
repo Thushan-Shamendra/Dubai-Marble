@@ -35,7 +35,7 @@ const steps = [
     title: "Nano-Oleophobic Protective Seal",
     subtitle: "Hydrophobic Deep Impregnation",
     desc: "Final application of penetrating nano-polymers that seal the porous stone matrix against future coffee, wine, oil, and citrus stains while preserving the marble's natural breathability.",
-    image: imgs.svcCounter,
+    image: imgs.svcStain,
     highlights: ["Food-safe & child-safe barrier", "5+ Year stain protection warranty", "Maintains ultra-deep wet-look luster"],
   },
 ];
@@ -119,7 +119,7 @@ export default function ProcessTabs() {
           <div className="lg:col-span-5 relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-[#D9E2EC]">
             <Image
               src={cur.image}
-              alt={cur.title}
+              alt={`${cur.title} - Professional Marble Restoration in Dubai`}
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 40vw"

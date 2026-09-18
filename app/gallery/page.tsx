@@ -4,6 +4,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import SectionLabel from "@/components/SectionLabel";
 import PageHeader from "@/components/PageHeader";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
+import MachineryVideoShowcase from "@/components/MachineryVideoShowcase";
 import { imgs } from "@/data/images";
 
 export default function GalleryPage() {
@@ -19,10 +20,10 @@ export default function GalleryPage() {
       <section className="py-20 bg-white border-b border-[#D9E2EC]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <BeforeAfterSlider
-            beforeImage={imgs.svcStain}
-            afterImage={imgs.gal2}
-            beforeLabel="Before: Heavy Scratches & Dull Surface"
-            afterLabel="After: 5-Stage Diamond Mirror Polish"
+            beforeImage={imgs.sliderBefore}
+            afterImage={imgs.sliderAfter}
+            beforeLabel="Before: Heavy Scratches, Dull Traffic Patterns & Etching"
+            afterLabel="After: 5-Stage Diamond Mirror Polish & Crystallization"
             title="Interactive Before & After Comparison"
             subtitle="Slide left & right to view the dramatic difference in light reflection and clarity."
           />
@@ -38,6 +39,9 @@ export default function GalleryPage() {
           <GalleryView />
         </div>
       </section>
+
+      {/* Machinery In Action Video Section */}
+      <MachineryVideoShowcase />
     </>
   );
 }

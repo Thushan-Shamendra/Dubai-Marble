@@ -70,7 +70,7 @@ export default function GalleryView() {
               className="group cursor-pointer rounded-2xl overflow-hidden border border-[#D9E2EC] shadow-sm hover:shadow-xl transition-shadow"
             >
               <div className="img-card aspect-[4/3] relative">
-                <Image src={item.src} alt={item.title} fill className="object-cover" sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" />
+                <Image src={item.src} alt={`${item.title} - ${item.location} Marble Restoration Dubai`} fill className="object-cover" sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" />
                 <div className="img-card-overlay" />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                   <div className="bg-[#10233F]/70 backdrop-blur-sm p-3 rounded-full">

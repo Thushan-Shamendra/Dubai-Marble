@@ -16,6 +16,7 @@ import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import AnimatedSection from "@/components/AnimatedSection";
 import SectionLabel from "@/components/SectionLabel";
 import SectionDivider from "@/components/SectionDivider";
+import MachineryVideoShowcase from "@/components/MachineryVideoShowcase";
 import { servicesData } from "@/data/services";
 import { imgs } from "@/data/images";
 
@@ -128,6 +129,7 @@ export default function HomePage() {
             poster={imgs.heroBg}
             className="w-full h-full object-cover object-center scale-105 opacity-95 brightness-[0.92]"
           >
+            <source src="/videos/hero-video.mp4" type="video/mp4" />
             <source src="/bg1.mp4" type="video/mp4" />
             <source src="/hero-video.mp4" type="video/mp4" />
           </video>
@@ -308,7 +310,7 @@ export default function HomePage() {
                 <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-xl border border-[#D9E2EC]">
                   <Image
                     src={imgs.aboutWork}
-                    alt="Marble Polishing Machine in Dubai"
+                    alt="Technician operating marble floor polishing machine in Dubai"
                     fill
                     className="object-cover"
                     sizes="(max-width:1024px) 100vw, 50vw"
@@ -362,7 +364,7 @@ export default function HomePage() {
                   <div className="aspect-[16/10] relative overflow-hidden bg-[#EEF5FF]">
                     <Image
                       src={serviceImages[s.slug] ?? imgs.svcFloor}
-                      alt={s.title}
+                      alt={`${s.title} in Dubai - Professional Marble Restoration & Polishing`}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                       sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw"
@@ -584,6 +586,11 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ─────────────────────────────────────────────────────────────
+          5B. MACHINERY & PROCESS VIDEOS (Dedicated Video Showcase)
+         ───────────────────────────────────────────────────────────── */}
+      <MachineryVideoShowcase />
 
       {/* ─────────────────────────────────────────────────────────────
           6. SIMPLE 3 STEPS PROCESS (Ribbon Cards)
